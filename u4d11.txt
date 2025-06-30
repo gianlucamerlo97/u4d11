@@ -10,3 +10,8 @@ WHERE iva = 20
 
 4)SELECT * FROM prodotti
 WHERE in_commerce =true OR in_production=true
+
+5) SELECT fatture.*, clienti.name, clienti.surname, clienti.year_of_birth, clienti.region_of_residence
+FROM fatture
+JOIN clienti ON fatture.id_cliente = clienti.number_cliente
+WHERE fatture.amount < 1000;
