@@ -1,0 +1,12 @@
+1)SELECT * FROM clienti 
+WHERE name= 'Mario';
+
+2)SELECT name,surname FROM clienti
+WHERE year_of_birth = 1982;
+
+3)SELECT COUNT(*) FROM fatture
+WHERE iva = 20
+
+
+4)SELECT * FROM prodotti
+WHERE in_commerce =true OR in_production=true
